@@ -1,0 +1,47 @@
+body {
+	background-color: #761414;
+}
+div {
+width: auto; /*400px;*/
+height: auto; /*770px;*/
+}
+table {
+width: auto;
+height: auto;
+}
+button {
+	background-color: #8C8484;
+	border-radius: 40%;
+	width: 120px;
+	height: 74px;
+	box-shadow: 20px 20px rgba(140, 132, 132, 0.6);
+	border: none;
+}
+.grande {
+	background-color: #7c7b7b;
+	width: 130px;
+	height: 84px;
+}
+@supports(object-fit: cover){
+	img {
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+}
+td {
+	border: none;
+}
+
+h2 {
+	font-size: 250%;
+}
+input {
+	height: 50px;
+	width: 120px;
+	background-color: #761414;
+	border: none;
+	font-size: 250%;
+}
+
+

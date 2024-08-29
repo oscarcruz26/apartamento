@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-5.0.1-dist/bootstrap-5.0.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/controlclaro.css">
+	<script type="text/javascript" src="../../jquery/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="javascript/controlClaro.js"></script>
+	<title>ClaroTV</title>
+</head>
+<body>
+	<div class="row">
+		<div class="col-lg-6">
+			<table class="table table-responsive">
+				<tr>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782873837?32,')"><h2>GUIA</h2></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782922287?32,')"><img src="../imagenes/arriba.png"></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782920247?32,')"><img src="../imagenes/informacion.png"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782924327?32,')"><img src="../imagenes/izquierda.png"></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782912087?32,')"><h2>OK</h2></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782883527?32,')"><img src="../imagenes/derecha.png"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782903927?32,')"><h2>PREV</h2></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782881487?32,')"><img src="../imagenes/abajo.png"></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782889647?32,')"><img src="../imagenes/cerrar.png"></button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-6">
+			<table class="table table-responsive">
+				<tr>
+					<td>
+						<input type="number" min="0" max="1999" disabled="true" id="numerocanal">
+					</td>
+					<td>
+						<button onclick="canal()"><h2>ir</h2></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="boton('1')"><h2>1</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('2')"><h2>2</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('3')"><h2>3</h2></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="boton('4')"><h2>4</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('5')"><h2>5</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('6')"><h2>6</h2></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="boton('7')"><h2>7</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('8')"><h2>8</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('9')"><h2>9</h2></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782891687?32,')"><h2>CH▼</h2></button>
+					</td>
+					<td>
+						<button onclick="boton('0')"><h2>0</h2></button>
+					</td>
+					<td>
+						<button onclick="ejecutar('/$NEC&3782871287?32,')"><h2>CH▲</h2></button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

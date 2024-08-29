@@ -1,0 +1,68 @@
+h1 {
+	text-align: center;
+	color: #04609F;
+}
+
+body {
+	background-color: #BBD5E7;/*19303d;*/
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+	height: 200px;
+}
+
+button {
+	height: 95%;
+	width: 95%;
+	border-radius: 70px;
+	box-shadow: 10px 10px rgba(125, 125, 128, 0.4);
+	background-image: url(../imagenes/golden.png);
+}
+
+header {
+	margin: 5px;
+}
+
+h2 {
+	color: #04609F;/*085a7a;*/
+	font-style: italic;
+	font-size: 50px;
+}
+
+img {
+	background-size: cover;
+}
+
+tr {
+	margin: 0px;
+	padding: 0px;
+}
+
+td {
+	margin: 0px;
+	padding: 0px;
+}
+
+td div {
+	border-radius: 100px;
+	box-shadow: 10px 10px rgba(125, 125, 128, 0.4);
+	display:flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+}
+
+.grande {
+	height: 98%;
+	width: 98%;
+}
+
+.amarillo {
+	background-color: yellow;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+	color: black;
+}
