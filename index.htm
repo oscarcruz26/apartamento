@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script language="JavaScript">
+		// variable to store our intervalID
+		let intervalId;
+		var contador;
+
+		contador = 0
+
+		function changeImagen() {
+		  // check if an interval has already been set up
+
+		  intervalId ??= setInterval(flashImagen, 3000);
+		}
+
+		function flashImagen() {
+		  const oElem = document.getElementById("frame1");
+		  /*oElem.src = oElem.src === "index_archivos/image033.png" ? "index_archivos/image023.png" : "index_archivos/image033.png";*/
+		  if (oElem.src === "http://" + location.host + "/pantallaactividades/Horarios.pdf")
+		  {
+		  	oElem.src = "mtto1e31d_archivos/sheet002.htm";
+		  }else if (oElem.src === "http://" + location.host +"/pantallaactividades/mtto1e31d_archivos/sheet002.htm")
+		  {
+		  	oElem.src = "mtto1eayer_archivos/sheet002.htm";
+		  }else if (oElem.src === "http://" + location.host +"/pantallaactividades/mtto1eayer_archivos/sheet002.htm") 
+		  {
+		  	oElem.src = "mtto1e31d_archivos/sheet001.htm";
+		  }else if (oElem.src === "http://" + location.host +"/pantallaactividades/mtto1e31d_archivos/sheet001.htm") 
+		  {
+		  	oElem.src = "mtto1eayer_archivos/sheet001.htm";
+		  }else
+		  {
+		  	oElem.src = "Horarios.pdf"
+		  	contador = contador + 1;
+		  }	 
+		  if (contador == 10) 
+		  {
+		  	location.reload();
+		  }	  
+		}
+		changeImagen();
+	</script>
+	<style>
+		frame.pequeno{
+			zoom: 60%;
+		}
+		frame.grande{
+			zoom: 75%;
+		}
+	</style>
+</head>
+<frameset>
+	<frame id="frame1" src="Horarios.pdf" class="pequeno">
+	<noframes>
+		<body>
+			<p>Esta página utiliza marcos que su explorador no admite.</p>
+		</body>
+	 </noframes>
+</frameset>
+
+</html>
